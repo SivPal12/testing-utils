@@ -26,4 +26,9 @@ public class ConstructorUtilsTest {
         }
     }
 
+    @Test
+    public void constructor_IsPrivate() throws Exception {
+        assertTrue(ConstructorUtils.isPrivate(ConstructorUtils.class));
+    }
+
 }

@@ -10,6 +10,9 @@ import java.lang.reflect.Modifier;
  */
 public class ConstructorUtils {
 
+    private ConstructorUtils() {
+        // Blank
+    }
     /**
      * Checks if constructor of class i private and adds line coverage
      */
