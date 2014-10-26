@@ -28,9 +28,9 @@
             <featureBranchPrefix>feature/</featureBranchPrefix>
             <releaseBranchPrefix>release/</releaseBranchPrefix>
             <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
-            <versionTagPrefix>futurama-quotes-</versionTagPrefix>
+            <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
           </flowInitContext>
-          <scmCommentPrefix>[jgitflow] </scmCommentPrefix>
+          <scmCommentPrefix xml:space="preserve">[jgitflow] </scmCommentPrefix>
           <noDeploy>true</noDeploy>
         </configuration>
       </plugin>
