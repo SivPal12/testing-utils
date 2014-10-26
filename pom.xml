@@ -1,11 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>no.nith.sivpal12</groupId>
   <artifactId>testing-utils</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1.0</version>
   <name>testing-utils</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>
@@ -20,9 +27,9 @@
             <featureBranchPrefix>feature/</featureBranchPrefix>
             <releaseBranchPrefix>release/</releaseBranchPrefix>
             <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
-            <versionTagPrefix>futurama-quotes-</versionTagPrefix>
+            <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
           </flowInitContext>
-          <scmCommentPrefix>[jgitflow] </scmCommentPrefix>
+          <scmCommentPrefix xml:space="preserve">[jgitflow] </scmCommentPrefix>
           <noDeploy>true</noDeploy>
         </configuration>
       </plugin>
